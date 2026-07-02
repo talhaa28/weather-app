@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>Weather App</h1>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search city...">
+
+                <button id="searchBtn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div id="loading" class="loading">
+                <div class="loader"></div>
+            </div>
+
+            <div id="error" class="error">
+                City not found!
+            </div>
+
+            <div id="weather" class="weather">
+
+                <div class="top">
+
+                    <div>
+
+                        <h2 id="cityName">Karachi</h2>
+
+                        <p id="dateTime"></p>
+
+                    </div>
+
+                    <img
+                        id="weatherIcon"
+                        src=""
+                        alt="weather">
+
+                </div>
+
+                <h1 id="temp">--°C</h1>
+
+                <p id="description">
+                    Clear Sky
+                </p>
+
+                <div class="details">
+
+                    <div class="box">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <h4>Feels Like</h4>
+                        <span id="feelsLike">--°C</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <h4>Humidity</h4>
+                        <span id="humidity">--%</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-wind"></i>
+                        <h4>Wind</h4>
+                        <span id="wind">-- km/h</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <h4>Pressure</h4>
+                        <span id="pressure">-- hPa</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h4>Min Temp</h4>
+                        <span id="minTemp">--°C</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <h4>Max Temp</h4>
+                        <span id="maxTemp">--°C</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-sun"></i>
+                        <h4>Sunrise</h4>
+                        <span id="sunrise">--</span>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-moon"></i>
+                        <h4>Sunset</h4>
+                        <span id="sunset">--</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
